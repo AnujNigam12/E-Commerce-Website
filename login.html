@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+ 
+    <button onclick="document.getElementById('id01').style.display='block'" class="verify">Log In</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+    <div class="container">
+        <h2>Login</h2>
+        <div>
+            <label class="uname" for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div>
+            <label class="psw" for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <a href="index.html"><input type="button" value="Login"></a>
+    </div>
+
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <script src="login.js"></script>
+</body>
+</html>
